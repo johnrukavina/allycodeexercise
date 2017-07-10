@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/controller.js"></script>
+<body>
+
+<div class="container-fluid">
+  <header>
+    <div class="row">
+      <div class="logo col-md-6">
+      </div>
+      <div class="col-md-6">
+        <nav class="nav-bar nav-blue pull-right">
+          <a href="#">home</a>
+          <a href="#">employee</a>
+          <a href="#">company</a>
+          <a href="#">services</a>
+          <a href="#">contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-12">
+          <section>
+            <h1 class="title">Best Bank Ever!</h1>
+            <div class="description">
+              Pellentesque habitant morbi tristique senectus et netus et <a href="#">malesuada</a> fames ac turpis egestas. Vestibulum
+              tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+              Aenean ultricies mi vitae est. Mauris <a href="#">placerat</a> eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+            </div>
+            <div class="middle-section">
+              <div class="phoneImage"></div>
+              <h5 id="reasons" class="reasons-title">Reasons We're Awesome:</h5>
+              <ul aria-labelledby="reasons">
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Aliquam tincidunt mauris eu risus.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Vestibulum auctor dapibus neque.</li>
+              </ul>
+              <div class="mobile">
+                <div class="mobile-title">
+                  Amazing Mobile Info
+                </div>
+                <div class="mobile-text">
+                  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                  egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+                </div>
+              </div>
+            </div>
+            <div class="rate-table">
+              <table>
+                <caption><span>Rates</span> Check them out.</caption>
+                <thead>
+                <tr class="tableHeader">
+                  <th scope="col"></th>
+                  <th scope="col">Annual Percentage Yield</th>
+                  <th scope="col">Est. Earnings for 1 Year*</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+              <div class="table-note">*Based on $50,000 deposit.</div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar col-md-4">
+      <aside>
+        <div class="buttonContainer">
+          <button type="button" onclick="showModal()">Login</button>
+        </div>
+        <div class="tabContainer">
+          <div class="tab">
+            <button class="tablinks active" onclick="toggleTab(this)">News</button>
+            <button class="tablinks" onclick="toggleTab(this)">Archive</button>
+          </div>
+          <div class="tabcontent news">
+            <h3>Lorem ipsum dolor</h3>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis</p>
+            <h3>Lorem ipsum dolor</h3>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis</p>
+            <h3>Lorem ipsum dolor</h3>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis</p>
+          </div>
+          <div class="tabcontent archive">
+            <h3>Lorem ipsum dolor</h3>
+            <h3>Lorem ipsum dolor</h3>
+            <h3>Lorem ipsum dolor</h3>
+            <h3>Lorem ipsum dolor</h3>
+            <h3>Lorem ipsum dolor</h3>
+            <h3>Lorem ipsum dolor</h3>
+            <h3>Lorem ipsum dolor</h3>
+            <h3>Lorem ipsum dolor</h3>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <footer>
+    <div class="row">
+      <div class="col-md-6">
+        &copy;2014 URBank
+      </div>
+      <div class="col-md-6">
+        <nav class="nav-bar pull-right">
+          <a href="#">home</a>
+          <a href="#">employee</a>
+          <a href="#">company</a>
+          <a href="#">services</a>
+          <a href="#">contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</div>
+<div class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <p>Sign In To Your Account</p>
+    <label for="username">Username</label>
+    <input id="username" class="inputField" name="username" type="text"  maxlength="100">
+    <label for="username">Password</label>
+    <input id="password" class="inputField" name="password" type="password" maxlength="50">
+    <div class="buttonContainer">
+      <button class="submitButton" onclick="closeModal()">Login</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/table.js"></script>
+
+</body>
+</html>
